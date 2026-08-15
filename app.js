@@ -310,3 +310,85 @@
 
 // total_snacks=((max_age-my_Age)*365)*snack_per_day
 // document.writeln(`Total ${snack} you will need for lifetime are :`+" "+total_snacks )
+
+
+                                   // Chapter No 6 //
+
+//Question no 1 //
+
+//  let a = Number(prompt("enter a number : ")) ;
+ 
+ 
+// document.writeln(`Result : ` + "<br>" + ` The Value of a is : ${a} ` + "<hr>" + ` The value of ++a is : ${++a}` +"<br>" +`Now the value of a is : ${a}` +"<br><br>" +`The value of a++ is : ${a++} ` + "<br>" + `Now the value of a is : ${a}` +"<br> <br>" +` The Value of --a is : ${--a} ` + "<br>" + `Now the value of a is : ${a}` + "<br><br><br>"+ ` The Value of a-- is : ${a--} ` + "<br>" + `Now the value of a is : ${a}` );
+
+
+
+//Question no 2//
+
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+// console.log(result)
+
+// The output of --a is  : 1 pre-decrement //
+// The output of --b is : 0 pre-decrement //
+// The output of ++b is : 1 pre-incremnt //
+// The output of b-- will remain the same because it is post-decrement : 1 and if the expression reappears anywhere again in the code we will observe te decreased output . //
+
+
+//Question no 3 //
+
+//Write a program that takes input a name from user & greet the user .//
+
+// let name = prompt("Enter Your Name : ");
+
+// document.writeln(`Hello ${name},`+ "<br>" + `How are you ?`)
+
+
+
+
+// Question no 4 //
+
+// let num = prompt("Enter a Number You want the table of : ");
+
+// if (num === null || num.trim() === "") { 
+//     num = 5; // Fallback to 5
+// } else {
+//     num = Number(num); // Convert to number if input exists
+// }
+
+// // Single loop to handle the printing
+// for (let i = 1; i <= 10; i++) { 
+//     document.write(`${num} x ${i} = ${num * i}<br>`);
+// }
+
+// Question no 5 //
+
+
+
+// let subj1 = prompt("Enter 1st subject name:");
+// let subj2 = prompt("Enter 2nd subject name:");
+// let subj3 = prompt("Enter 3rd subject name:");
+
+// let totalMarks = 100; 
+
+// let sub1Marks = Number(prompt(`Enter the marks of ${subj1}:`));
+// let sub2Marks = Number(prompt(`Enter the marks of ${subj2}:`));
+// let sub3Marks = Number(prompt(`Enter the marks of ${subj3}:`));
+
+// let sub1Pct = (sub1Marks / totalMarks) * 100;
+// let sub2Pct = (sub2Marks / totalMarks) * 100;
+// let sub3Pct = (sub3Marks / totalMarks) * 100;
+
+
+// document.writeln("<table border='1' cellpadding='5' style='border-collapse: collapse;'>");
+// document.writeln("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr>");
+// document.writeln(`<tr><td>${subj1}</td><td>${totalMarks}</td><td>${sub1Marks}</td><td>${sub1Pct}%</td></tr>`);
+// document.writeln(`<tr><td>${subj2}</td><td>${totalMarks}</td><td>${sub2Marks}</td><td>${sub2Pct}%</td></tr>`);
+// document.writeln(`<tr><td>${subj3}</td><td>${totalMarks}</td><td>${sub3Marks}</td><td>${sub3Pct}%</td></tr>`);
+// document.writeln("</table>");
+
+
+
+
+
+ 
