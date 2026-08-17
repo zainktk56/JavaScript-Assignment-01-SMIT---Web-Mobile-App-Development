@@ -388,6 +388,49 @@
 // document.writeln("</table>");
 
 
+// Chapter No 9
+
+
+//Question no 1 
+
+// let cityName = prompt("Enter Any City Name : "); 
+
+// if (cityName && cityName.toLowerCase() === "karachi") { 
+//     document.writeln("Welcome to city of lights"); 
+// }
+
+// Question no 2 
+
+// let gender = prompt("Please Enter Your Gender :");
+// if(gender && gender.toLowerCase() === "male"){
+//     document.writeln("Good Morning Sir")
+// }
+// else if (gender && gender.toLowerCase() === "female"){
+//     document.writeln("Good Morning Madam")
+// }
+// else{
+//     document.writeln("Good morning")
+// }
+
+
+//Question no 3 
+
+// let signalColor= prompt("Enter Signal Colour : ");
+
+// if (signalColor && signalColor.toLowerCase() === "red"){
+//     document.writeln("Must Stop")
+// }
+// if (signalColor && signalColor.toLowerCase() === "yellow"){
+//     document.writeln("Ready to move")
+// }
+// else if (signalColor && signalColor.toLowerCase() === "green"){
+//     document.writeln("Move now")
+// }
+// else{
+//     alert("Enter A valid Signal Colour for Example: red,yellow,green")
+// }
+
+
 
 
 
