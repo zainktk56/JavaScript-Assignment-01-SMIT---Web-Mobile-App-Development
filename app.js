@@ -431,7 +431,17 @@
 // }
 
 
+// Question no 4 
 
+let fuel = Number(prompt("Enter the Amount of Fuel left : "));
+
+if (fuel.value<=0.25){
+    document.writeln("Please Refill your fuel !");
+
+}
+else{
+    document.writeln("You are good to go, stay safe.")
+}
 
 
  
