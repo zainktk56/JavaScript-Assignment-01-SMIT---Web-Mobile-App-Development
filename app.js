@@ -433,15 +433,246 @@
 
 // Question no 4 
 
-let fuel = Number(prompt("Enter the Amount of Fuel left : "));
+// let fuel = Number(prompt("Enter the Amount of Fuel left : "));
 
-if (fuel.value<=0.25){
-    document.writeln("Please Refill your fuel !");
+// if (fuel<=0.25){
+//     document.writeln("Please Refill your fuel !");
 
-}
-else{
-    document.writeln("You are good to go, stay safe.")
-}
+// }
+// else{
+//     document.writeln("You are good to go, stay safe.")
+// }
 
 
- 
+// Question no 5
+
+
+// Part 1
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+
+// given condition for variable a is true
+
+// Part 2
+
+//  var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+
+// NOT TRUE NO OUTPUT
+
+
+
+// Part 3
+
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");  // only this is true
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+
+// Part 4 
+
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+
+// TRUE
+
+
+
+// Part 5 
+
+//  if (true){
+// alert("True");  // True
+// }
+// if (false){
+// alert("False");   // NO True
+// }
+
+
+
+
+// Part 6
+
+// if("car" < "cat"){
+// alert("car is smaller than cat");
+// }
+
+// starting both words are corret but the last one "r" comes before "t" so that's why cat is greater and car is smaller .
+
+
+//  Question no 6
+
+// let markSub1= Number(prompt("Enter the marks of the 1st subject : "));
+// let markSub2= Number(prompt("Enter the marks of the 2nd subject : "));
+// let markSub3= Number(prompt("Enter the marks of the 3rd subject : "));
+
+// if (markSub1 > 100 || markSub2 > 100 || markSub3 > 100){
+// alert("Please Enter marks less than 100 for each subject.")
+// }
+
+// let total_marks=300;
+// let Obtained_marks = markSub1+markSub2+markSub3;
+
+// let percentage = (Obtained_marks/total_marks)*100;
+// let grade = "N/A";
+// let remarks ="N/A" ;
+
+// if (percentage>=80 && percentage <= 100 ){
+//      grade = "A-one";
+//     remarks = "Excellent";
+// }
+
+// else if (percentage >= 70 && percentage <  80){
+//     grade = "A";
+//      remarks = "Good";
+// }
+
+
+// else if (percentage >= 60 && percentage < 70){
+//     lgrade = "B";
+//      remarks = "You need to Improve";
+// }
+
+// else if (percentage >= 50 && percentage < 60){
+//      grade = "D";
+//      remarks = "Fail";
+// }
+
+// else {
+//     alert(
+//         "No Result Found, Please Try Again!")
+// }
+
+// let output = `<h1>
+//         Mark Sheet
+//     </h1>
+//     <h4>Total Marks : ${total_marks}</h4>
+//     <h4>Marks Obtained : ${Obtained_marks}</h4>
+//     <h4>Percentage : ${percentage}</h4>
+//     <h4>Grade : ${grade}</h4>
+//     <h4>Remarks : ${remarks}</h4>
+// `
+// ;
+
+// document.body.innerHTML = output;
+
+
+
+// Question  no 7   Guess game
+
+// const secretNumber = Math.floor(Math.random() * 10) + 1;
+// let guessedCorrectly = false;
+
+// // The loop will keep running until guessedCorrectly becomes true
+// while (!guessedCorrectly) {
+//     const input = prompt("Enter a guess from 1 to 10 (or click Cancel to quit):");
+    
+//     // Check if the user clicked "Cancel"
+//     if (input === null) {
+//         alert("Game over. Thanks for playing!");
+//         break;
+//     }
+    
+//     const guessNumber = Number(input);
+
+//     // Validate if the input is actually a valid number
+//     if (isNaN(guessNumber) || input.trim() === "") {
+//         alert("Please enter a valid number!");
+//     } 
+//     else if (guessNumber === secretNumber) {
+//         alert("Bingo! Correct answer");
+//         guessedCorrectly = true; // This breaks the loop
+//     } 
+//     else if (guessNumber + 1 === secretNumber || guessNumber - 1 === secretNumber) {
+//         alert("Close enough to the correct answer!");
+//     } 
+//     else if (guessNumber > secretNumber) {
+//         alert("Too large!");
+//     } 
+//     else if (guessNumber < secretNumber) {
+//         alert("Too small!");
+//     }
+// }
+
+
+// Question no  8 (TO CHECK IF DIVISIBLE BY THREE)
+
+// let num = Number(prompt("Enter a number :"));
+
+// if (isNaN(num)) {
+//     alert("Please enter a valid number!");
+// } 
+// else if (num % 3 === 0) {
+//     alert("Divisible by 3");
+// }
+// else {
+//     alert("Not Divisible by 3");
+// }
+
+// Question no 9 =>  Write a program that checks whether the given input is an even number or an odd number.
+
+
+// let num = Number(prompt("Enter a Number : "));
+
+// if (num%2==0){
+//     alert("The Number is Even")
+// }
+// else{
+//     alert("Not even")
+// }
+
+
+// Question no 10 
+
+// let temp = Number(prompt("Enter the Temprature in Celcious : "));
+
+// if (temp>=40){
+//     alert("It is too hot outside.")
+// }
+// else if(temp>=30 && temp < 40 ){
+//     alert("The Weather today is Normal.")
+// }
+// else if (temp>=20 && temp < 30){
+// alert("Today’s Weather is cool")
+// }
+
+// else if (temp>=10 && temp < 20) {
+// alert("OMG! Today’s weather is so Cool.")
+// }
+
+// Question no 11 
+
+//  let num1 = Number(prompt("Enter the 1st Number :")); 
+// let num2 = Number(prompt("Enter the 2nd Number : ")); 
+// let operation = prompt("Select any operation to perform a calculation (+,-,*, /,% ) :"); 
+
+// if (operation == "+"){ 
+//     alert("The Addition of both Numbers is : " + (num1 + num2)); 
+// } else if (operation == "-"){ 
+//     alert("The Subtraction of both Numbers is : " + (num1 - num2)); 
+// } else if (operation == "*"){ 
+//     alert("The Multiplication of both Numbers is : " + (num1 * num2)); 
+// } else if (operation == "/"){ 
+//     alert("The Division of both Numbers is : " + (num1 / num2)); 
+// } else if (operation == "%") { 
+//     alert("The Remainder of both Numbers is : " + (num1 % num2)); 
+// } else { 
+//     alert("theek operation symbol dal bhai!"); 
+// }
