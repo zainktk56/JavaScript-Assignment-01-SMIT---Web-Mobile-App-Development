@@ -676,3 +676,111 @@
 // } else { 
 //     alert("theek operation symbol dal bhai!"); 
 // }
+
+
+
+
+//   Chapter 12-13
+
+// Question no 1
+
+// let character = prompt("Enter a Character :");
+// let code = character.charCodeAt(0);
+
+
+//  if(code >= 49 && code <=57){
+//     alert("It is a number .")
+// }
+// else if (code >=65 && code <=90){
+//     alert("It is a uppercase letter.")
+// }
+// else if (code >=97 && code <=122){
+//     alert("It is a lower case letter.")
+// }
+// else{
+//     alert("Something Went Wrong please Try Again !!.")
+// }
+
+
+// Question no 2 
+
+// let num1 = Number(prompt("Enter a Num1 : "));
+// let num2 = Number(prompt("Enter a Num2 : "));
+
+// if (num1 > num2){
+//     alert("Num1 is greater than Num 2.")
+// }
+// else if (num2>num1){
+//     alert("Num2 is greater than Num1.")
+// }
+// else{
+//     alert ("Both of the Numbers are equal.")
+// }
+
+// Question no 3 
+
+// Write a program that takes input a number from user &
+// state whether the number is positive, negative or zero.
+
+// let num = Number(prompt("Enter a Number"));
+
+// if (num>0){
+//     alert("The Number is Positive!")
+// }
+// else if(num<0){
+//     alert( "The Number is Negative!")
+// }
+// else {
+//     alert("The Number is Zero!")
+// }
+
+
+// Question no 4 
+
+// Write a program that takes a character (i.e. string of
+// length 1) and returns true if it is a vowel, false otherwise
+
+// let str = prompt("Enter A Word/Character ;");
+
+// if (str[0]=="a" || str[0]=="e" || str[0]=="i" || str[0]=="o" || str[0]=="u" || str[0]=="A" || str[0]=="E" || str[0]=="I" || str[0]=="O" || str[0]=="U"){
+// alert("It is a Vowel.")
+// }
+
+// else{
+//     alert("Not a Vowel.")
+// }
+
+
+// Question no 5 
+
+// let pass = prompt("Enter Password : ");
+// let confirmPass = prompt("Confirm Password :");
+
+// if (!pass || !confirmPass || pass.trim() === "" || confirmPass.trim() === "" || !userPassword) {
+//     alert("Please enter your password");
+// }
+// else if (pass.trim() === confirmPass.trim()) {
+//     alert("Correct! The password you entered matches the original password");
+// }
+// else {
+//     alert("Incorrect password");
+// }
+
+
+// Question no 6
+
+// This if/else statement does not work. Try to fix it:
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// console.log(greeting = "Good day");
+// }
+// else{
+// console.log(greeting = "Good evening");
+// }
+
+
+// Question no 7
+
+// let time = Number(prompt("Enter the time in this format 24 hr format ex: (1900) : "));
