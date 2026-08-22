@@ -803,3 +803,50 @@
 
 // Today’s MY REST DAY BUT I WILL COMPLETE MY WORK 
 
+
+// Chapter NO 14 -16
+
+// Question no 1 : Declare an empty array using JS literal notation to store student names in future
+
+// let Student_arr = []; 
+
+// 2. Declare an empty array using JS object notation to store
+// student names in future
+
+// let students= new Array();
+
+// 3.  Declare and initialize a strings array.
+
+// let str_arr = ["apple","grape","orange","bananna","pineapple"];
+
+
+// 4. Declare and initialize a numbers array.
+
+// let num_arr = [1,45,656,45,4,234,34,232,12,23 ]
+
+// 5. Declare and initialize a boolean array.
+
+// let bool_arr = [ true,false,true,true,false]
+
+// 6. Declare and initialize a mixed array.
+
+// let mix_arr = ["apple",123,232,true,false ,"orange","ali"];
+
+// 7. Declare and Initialize an array and store available
+// education qualifications in Pakistan (e.g. SSC, HSC, BCS,
+// BS, BCOM, MS, M. Phil., PhD). Show the listed
+// qualifications in your browser like:
+
+// let qualifications = [ "SSC", "HSC", "BCS",
+// "BS", "BCOM", "MS", "MPhil", "PhD"];
+
+// let get_div=document.getElementById("qualifications");
+
+// get_div.innerHTML = "<h1>Qualifications</h1>";
+
+// qualifications.forEach((element,index) => {
+//     get_div.innerHTML+=`<p>${index+1}) ${element}  </p>`
+// });
+
+
+
