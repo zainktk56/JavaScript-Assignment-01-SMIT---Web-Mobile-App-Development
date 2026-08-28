@@ -848,6 +848,12 @@
 //     get_div.innerHTML+=`<p>${index+1}) ${element}  </p>`
 // });
 
+
+
+
+
+
+
 // //Write a program to store 3 student names in an array.Take
 // another array to store score of these three students.
 // Assume that total marks are 500 for each student, display
@@ -858,11 +864,11 @@
 
 // let user_name = document.getElementById("arr_input");
 // let user_marks = document.getElementById("arr_num_input");
-// let addbtn = document.getElementById("btn");
+// let addbtn = document.getElementById("btn"); // Target your actual button ID
 // let getdiv = document.getElementById("output");
 
 // addbtn.addEventListener('click', () => {
-
+//     // 1. Store the new values
 //     arr_name.push(user_name.value);
 //     arr_marks.push(Number(user_marks.value));
 
@@ -880,3 +886,124 @@
 //     user_name.value = "";
 //     user_marks.value = "";
 // });
+
+
+
+
+
+// 9. Initialize an array with color names. Display the array
+// elements in your browser.
+// a. Ask the user what color he/she wants to add to the
+// beginning & add that color to the beginning of the array.
+// Display the updated array in your browser.
+
+
+
+
+// let arr_colour = ['orange', 'blue', 'white', 'green', 'red', 'pink', 'purple']; 
+
+let arr_colour = ['peach','black','orange', 'blue', 'white', 'green', 'red', 'pink', 'purple']; // two more colour
+
+
+let getdiv = document.getElementById("output");
+let getbtn = document.getElementById("add");
+// let get_end = document.getElementById("end_colur");
+
+
+// let get_new = document.getElementById("new_colur");
+let getIndex= document.getElementById("customIndex");
+
+
+
+function renderList() {
+    // This now safely clears ONLY the list items inside #output
+    getdiv.innerHTML = ""; 
+    
+
+    // arr_colour.shift() 
+// to delete first element we will use shift
+
+    arr_colour.forEach((element, i) => {
+        getdiv.innerHTML += `<p>${i + 1}) ${element}</p>`;
+    });
+}
+
+// Initial display on page load
+renderList();
+
+
+// ADD TO CUSTOM INDEX
+
+
+// getbtn.addEventListener('click',()=>{
+//    let newColor = get_new.value.trim();
+   
+//    let index=Number(getIndex.value)
+
+// if (newColor !== "" && index !== "" && !isNaN(index) && index >= 0) {
+//         if (newColor !== "") {
+//              arr_colour.splice(index,0,newColor);
+//             get_new.value = "";
+//         }
+        
+//         // if (index !== "") {
+//         //     arr_colour.push(endColor);    
+//         //     get_end.value = "";
+//         // }
+        
+//    else{
+//     alert("please fill every field!")
+//    }
+//     renderList(); 
+// }});
+
+// DELETE FROM CUSTOM INDEX
+
+// getbtn.addEventListener('click',()=>{
+
+   
+//    let index=Number(getIndex.value)
+
+// if (index !== "" && !isNaN(index) && index >= 0) {
+// arr_colour.splice(index,1);
+// }
+        
+       
+        
+//    else{
+//     alert("please fill every field!")
+//    }
+//     renderList(); 
+   
+// });
+
+
+
+
+// TO ADD AT FIRST AND LAST OF THE ARRAY
+
+// getbtn.addEventListener('click', () => {
+//     let newColor = get_new.value.trim();
+//     let endColor = get_end.value.trim();
+    
+//     // Check if at least one field has text
+//     if (newColor !== "" || endColor !== "") {
+//         if (newColor !== "") {
+//             arr_colour.unshift(newColor); 
+//             get_new.value = "";
+//         }
+        
+//         if (endColor !== "") {
+//             arr_colour.push(endColor);    
+//             get_end.value = "";
+//         }
+        
+//         renderList(); // Updates the UI
+//     } else {
+//         alert("Please enter at least one color!");
+//     }
+// });
+
+
+
+
