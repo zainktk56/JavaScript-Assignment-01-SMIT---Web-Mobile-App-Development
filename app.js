@@ -848,5 +848,35 @@
 //     get_div.innerHTML+=`<p>${index+1}) ${element}  </p>`
 // });
 
+// //Write a program to store 3 student names in an array.Take
+// another array to store score of these three students.
+// Assume that total marks are 500 for each student, display
+// the scores & percentages of students like.
 
+// let arr_name = [];
+// let arr_marks = [];
 
+// let user_name = document.getElementById("arr_input");
+// let user_marks = document.getElementById("arr_num_input");
+// let addbtn = document.getElementById("btn");
+// let getdiv = document.getElementById("output");
+
+// addbtn.addEventListener('click', () => {
+
+//     arr_name.push(user_name.value);
+//     arr_marks.push(Number(user_marks.value));
+
+  
+//     getdiv.innerHTML = "";
+
+   
+//     arr_name.forEach((element, i) => {
+//         let marks = arr_marks[i];
+//         let percentage = (marks / 500) * 100;
+//         getdiv.innerHTML += `<p>Score of ${element} is ${marks}. Percentage ${percentage.toFixed(2)}%</p>`;
+//     });
+
+    
+//     user_name.value = "";
+//     user_marks.value = "";
+// });
