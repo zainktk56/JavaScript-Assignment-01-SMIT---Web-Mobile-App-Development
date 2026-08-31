@@ -125,7 +125,7 @@
 // document.writeln(username + " ordered " + product_quantity +" " + product_title +  " on XYZ Clothing store.")
 
 
-                                                    //    CHAPTER NO 4
+//    CHAPTER NO 4
 
 // Question no 1 :                                                    
 
@@ -312,13 +312,13 @@
 // document.writeln(`Total ${snack} you will need for lifetime are :`+" "+total_snacks )
 
 
-                                   // Chapter No 6 //
+// Chapter No 6 //
 
 //Question no 1 //
 
 //  let a = Number(prompt("enter a number : ")) ;
- 
- 
+
+
 // document.writeln(`Result : ` + "<br>" + ` The Value of a is : ${a} ` + "<hr>" + ` The value of ++a is : ${++a}` +"<br>" +`Now the value of a is : ${a}` +"<br><br>" +`The value of a++ is : ${a++} ` + "<br>" + `Now the value of a is : ${a}` +"<br> <br>" +` The Value of --a is : ${--a} ` + "<br>" + `Now the value of a is : ${a}` + "<br><br><br>"+ ` The Value of a-- is : ${a--} ` + "<br>" + `Now the value of a is : ${a}` );
 
 
@@ -583,13 +583,13 @@
 // // The loop will keep running until guessedCorrectly becomes true
 // while (!guessedCorrectly) {
 //     const input = prompt("Enter a guess from 1 to 10 (or click Cancel to quit):");
-    
+
 //     // Check if the user clicked "Cancel"
 //     if (input === null) {
 //         alert("Game over. Thanks for playing!");
 //         break;
 //     }
-    
+
 //     const guessNumber = Number(input);
 
 //     // Validate if the input is actually a valid number
@@ -872,17 +872,17 @@
 //     arr_name.push(user_name.value);
 //     arr_marks.push(Number(user_marks.value));
 
-  
+
 //     getdiv.innerHTML = "";
 
-   
+
 //     arr_name.forEach((element, i) => {
 //         let marks = arr_marks[i];
 //         let percentage = (marks / 500) * 100;
 //         getdiv.innerHTML += `<p>Score of ${element} is ${marks}. Percentage ${percentage.toFixed(2)}%</p>`;
 //     });
 
-    
+
 //     user_name.value = "";
 //     user_marks.value = "";
 // });
@@ -918,7 +918,7 @@
 // function renderList() {
 //     // This now safely clears ONLY the list items inside #output
 //     getdiv.innerHTML = ""; 
-    
+
 
 //     // arr_colour.shift() 
 // // to delete first element we will use shift
@@ -937,7 +937,7 @@
 
 // getbtn.addEventListener('click',()=>{
 //    let newColor = get_new.value.trim();
-   
+
 //    let index=Number(getIndex.value)
 
 // if (newColor !== "" && index !== "" && !isNaN(index) && index >= 0) {
@@ -945,12 +945,12 @@
 //              arr_colour.splice(index,0,newColor);
 //             get_new.value = "";
 //         }
-        
+
 //         // if (index !== "") {
 //         //     arr_colour.push(endColor);    
 //         //     get_end.value = "";
 //         // }
-        
+
 //    else{
 //     alert("please fill every field!")
 //    }
@@ -961,20 +961,20 @@
 
 // getbtn.addEventListener('click',()=>{
 
-   
+
 //    let index=Number(getIndex.value)
 
 // if (index !== "" && !isNaN(index) && index >= 0) {
 // arr_colour.splice(index,1);
 // }
-        
-       
-        
+
+
+
 //    else{
 //     alert("please fill every field!")
 //    }
 //     renderList(); 
-   
+
 // });
 
 
@@ -985,19 +985,19 @@
 // getbtn.addEventListener('click', () => {
 //     let newColor = get_new.value.trim();
 //     let endColor = get_end.value.trim();
-    
+
 //     // Check if at least one field has text
 //     if (newColor !== "" || endColor !== "") {
 //         if (newColor !== "") {
 //             arr_colour.unshift(newColor); 
 //             get_new.value = "";
 //         }
-        
+
 //         if (endColor !== "") {
 //             arr_colour.push(endColor);    
 //             get_end.value = "";
 //         }
-        
+
 //         renderList(); // Updates the UI
 //     } else {
 //         alert("Please enter at least one color!");
@@ -1023,16 +1023,74 @@
 // Copy 3 array elements from cities array to selectedCities
 // array.
 
-let cities = ['karachi','islamabad','lahore','peshawar','quetta']
- let getdiv=document.getElementById("sort_stu");
 
- let citiesloop=cities.forEach(element => {
- getdiv.innerHTML+=`${element}, `
- });
+// let cities = ['karachi', 'islamabad', 'lahore', 'peshawar', 'quetta'];
+// let getdiv = document.getElementById("sort_stu");
 
- let 
+// cities.forEach(element => {
+//     getdiv.innerHTML += `${element}, `;
+// });
 
- 
+// let selected_cities = ['karachi', 'islamabad', 'lahore'];
+// let getPara = document.getElementById("select");
+
+// selected_cities.forEach(element => {
+//     getPara.innerHTML += `${element}, `; // Added comma and space for spacing
+// });
+
+//12. Write a program to create a single string from the
+// below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+
+
+// var arr = ["this","is","my","cat"];
+
+// console.log(arr.join(' '))
+
+
+// 13. Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out)
+
+// let arr=["keyboard","mouse","monitor","laptop","cpu"];
+
+// let looped=arr.forEach(element => {
+//     arr.push(element)
+// });
+
+// let getdiv=document.getElementById("output");
+// getdiv.innerHTML=arr.join(' ')
+
+
+//14. Create a new array. Store values one by one in such a way
+// that you can access the values in reverse order. (Last InFirst Out)
+
+// let arr=["keyboard","mouse","monitor","laptop","cpu"];
+// let looped = arr.forEach(element => {
+//     arr.push(element)
+// });
+
+//  let getdiv=document.getElementById("output");
+//  getdiv.innerHTML=arr.toReversed()
+
+
+
+// // Store phone manufacturers in an array
+// let manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+// // Build the HTML select dropdown string
+// let selectHTML = "<select>";
+
+// manufacturers.forEach(brand => {
+//   selectHTML += `<option value="${brand}">${brand}</option>`;
+// });
+
+// selectHTML += "</select>";
+
+// // Display in the browser using document.write()
+// let getdiv=document.getElementById("output");
+// getdiv.innerHTML+=`${selectHTML}`
 
 
 
