@@ -902,34 +902,34 @@
 
 // let arr_colour = ['orange', 'blue', 'white', 'green', 'red', 'pink', 'purple']; 
 
-let arr_colour = ['peach','black','orange', 'blue', 'white', 'green', 'red', 'pink', 'purple']; // two more colour
+// let arr_colour = ['peach','black','orange', 'blue', 'white', 'green', 'red', 'pink', 'purple']; // two more colour
 
 
-let getdiv = document.getElementById("output");
-let getbtn = document.getElementById("add");
-// let get_end = document.getElementById("end_colur");
+// let getdiv = document.getElementById("output");
+// let getbtn = document.getElementById("add");
+// // let get_end = document.getElementById("end_colur");
 
 
-// let get_new = document.getElementById("new_colur");
-let getIndex= document.getElementById("customIndex");
+// // let get_new = document.getElementById("new_colur");
+// let getIndex= document.getElementById("customIndex");
 
 
 
-function renderList() {
-    // This now safely clears ONLY the list items inside #output
-    getdiv.innerHTML = ""; 
+// function renderList() {
+//     // This now safely clears ONLY the list items inside #output
+//     getdiv.innerHTML = ""; 
     
 
-    // arr_colour.shift() 
-// to delete first element we will use shift
+//     // arr_colour.shift() 
+// // to delete first element we will use shift
 
-    arr_colour.forEach((element, i) => {
-        getdiv.innerHTML += `<p>${i + 1}) ${element}</p>`;
-    });
-}
+//     arr_colour.forEach((element, i) => {
+//         getdiv.innerHTML += `<p>${i + 1}) ${element}</p>`;
+//     });
+// }
 
-// Initial display on page load
-renderList();
+// // Initial display on page load
+// renderList();
 
 
 // ADD TO CUSTOM INDEX
@@ -1004,6 +1004,35 @@ renderList();
 //     }
 // });
 
+
+
+//10. Write a program to store student scores in an array &
+// sort the array in ascending order using Array’s sort
+// method.
+
+
+// let stuArr=[343,212,4545];
+
+// let getdiv=document.getElementById("sort_stu");
+// let sortedarr=stuArr.toSorted()
+// getdiv.innerHTML+=`<p>Score of Students : ${stuArr}</p>
+// <p>Order of Score of Students : ${sortedarr}</p>`   
+
+
+//11. Write a program to initialize an array with city names.
+// Copy 3 array elements from cities array to selectedCities
+// array.
+
+let cities = ['karachi','islamabad','lahore','peshawar','quetta']
+ let getdiv=document.getElementById("sort_stu");
+
+ let citiesloop=cities.forEach(element => {
+ getdiv.innerHTML+=`${element}, `
+ });
+
+ let 
+
+ 
 
 
 
