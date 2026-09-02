@@ -1115,11 +1115,12 @@
 
 // let getOutput = document.getElementById("output");
 
-// for (let i = 0; i < mainArray.length; i++) {
-//     for (let j = 0; j < mainArray[i].length; j++) {
-//         getOutput.innerHTML += mainArray[i][j] + " ";
-//     }
-//     getOutput.innerHTML += "<br>";
+// for (let a = 0; a < mainArray.length; a++) {
+     
+//    for (let b = 0; b < mainArray[a].length; b++) {
+//      getOutput.innerHTML += `${mainArray[a][b]} `;
+//    }
+//    getOutput.innerHTML +=`<br>`
 // }
 
 // 3.Write a program to print numeric counting from 1 to 10.
