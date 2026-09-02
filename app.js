@@ -1374,6 +1374,6 @@
 // var num = 35.36 ;
 // Remove the dot to display “3536” display in your browser.
 
-var num=35.36*100 ;
+// var num=35.36*100 ;
 
-console.log(num.toString())
+// console.log(num.toString())
