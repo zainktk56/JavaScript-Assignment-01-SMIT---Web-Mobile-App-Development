@@ -1267,3 +1267,15 @@
 // for (let i = 5; i < 100; i += 5) {
 //     console.log(i);
 // }
+
+
+//                                      Chapter No 18
+
+// 1. Write a program that takes two user inputs for first and
+// last name using prompt and merge them in a new variable
+// titled fullName. Greet the user using his full name.
+
+// let namea= prompt("enter your first name :").toUpperCase();
+// let nameb=prompt("enter your last name :").toUpperCase();
+
+// alert(`Hello, ${namea+' '+nameb}`)
