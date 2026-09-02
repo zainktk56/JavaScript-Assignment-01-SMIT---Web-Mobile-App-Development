@@ -1279,3 +1279,101 @@
 // let nameb=prompt("enter your last name :").toUpperCase();
 
 // alert(`Hello, ${namea+' '+nameb}`)
+
+
+// 2. Write a program to take a user input about his favorite
+// mobile phone model. Find and display the length of user
+// input in your browser
+
+
+// let fav_phone=prompt("Enter your fav mobile phone :");
+// let lengthfav=fav_phone.length
+// document.write(`My favourite phone is : ${fav_phone} <br> The length of the string is : ${lengthfav}`);
+
+
+
+//3. Write a program to find the index of letter “n” in the word
+// “Pakistani” and display the result in your browser .
+
+// let word="Pakistani";
+
+// for (let i=0;i<word.length;i++){
+//     let index=word[i]
+//     if (index=="n"){
+//         document.write(`The index of 'n' in Pakistani is : ${i} `)
+//     }
+// }
+
+// 4. Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+
+// let word="Hello World";
+
+// let splicedWord=word.lastIndexOf('l');
+// console.log(splicedWord)
+
+// 5. Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
+
+
+// let word="Pakistani";
+// let indexWord=word.charAt(3)
+// console.log(`String : Pakistani \n Character at index 3 : ${indexWord}`)
+
+// 6. Repeat Q1 using string concat() method.
+
+//  let namea= prompt("enter your first name :").toUpperCase();
+//  let nameb=prompt("enter your last name :").toUpperCase();
+//  let fullUserName=namea.concat(nameb)
+//  console.log(fullUserName)
+
+// 7. Write a program to replace the “Hyder” to “Islam” in the
+// word “Hyderabad” and display the result in your browser.
+
+// let word="Hyderabad"
+// let replacedWord=word.replace('Hyder','Islam')
+// console.log(replacedWord)
+
+// 8. Write a program to replace all occurrences of “and” in the
+// string with “&” and display the result in your browser.
+
+// var message = "Ali and Sami are best friends. They play cricket and football together."
+// console.log(message.replaceAll('and','&'))
+
+// 9. Write a program that converts a string “472” to a number
+// 472. Display the values & types in your browser.
+
+
+// let numStr ="472"
+// let typeofnumStr=typeof(numStr)
+// let convertedStr=Number(numStr);
+// let typeofnew=typeof(convertedStr)
+
+// console.log(`Value:${numStr}\n Type:${typeofnumStr}\n Value:${convertedStr} \n Type: ${typeofnew}`)
+
+// 10. Write a program that takes user input. Convert and
+// show the input in capital letters.
+
+// let inputUser = prompt("enter a word : ")
+// let converted= inputUser.toUpperCase()
+// console.log(converted)
+
+// 11. Write a program that takes user input. Convert and
+// show the input in title case.
+
+// let word=prompt("enter your name:")
+// let sliced=word.slice(1,word.length).toLowerCase()
+// let newword= word.charAt(0)
+// let converted=newword.toUpperCase()
+// console.log(converted.concat(sliced))
+
+
+
+// 12. Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+
+var num=35.36*100 ;
+
+console.log(num.toString())
