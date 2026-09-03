@@ -1116,7 +1116,7 @@
 // let getOutput = document.getElementById("output");
 
 // for (let a = 0; a < mainArray.length; a++) {
-     
+
 //    for (let b = 0; b < mainArray[a].length; b++) {
 //      getOutput.innerHTML += `${mainArray[a][b]} `;
 //    }
@@ -1171,7 +1171,7 @@
 //     const element = i;
 //     getpara.innerHTML+=` ${element}`
 
-    
+
 // }
 
 
@@ -1199,7 +1199,7 @@
 //     if(i%2==0){
 //         getpara5.innerHTML+=` ${i}k`
 //     }
-    
+
 // }
 
 
@@ -1223,7 +1223,7 @@
 // }
 // else{
 //     alert("We are sorry this item is not in or store!")
-    
+
 // }
 
 
@@ -1377,3 +1377,39 @@
 // var num=35.36*100 ;
 
 // console.log(num.toString())
+
+// 13. Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+// For character codes of [@
+
+// let usrName = prompt("Enter your username : ");
+// let isValid = true;
+
+// for (let i = 0; i < usrName.length; i++) {
+//     const charCode = usrName.charCodeAt(i);
+
+//     // Check the character codes, not the loop counter 'i'
+//     if (charCode === 33) {
+//         alert("Please enter a valid username without '!'");
+//         isValid = false;
+//         break; // Stop the loop immediately
+//     } else if (charCode === 44) {
+//         alert("Please enter a valid username without ','");
+//         isValid = false;
+//         break;
+//     } else if (charCode === 46) {
+//         alert("Please enter a valid username without '.'");
+//         isValid = false;
+//         break;
+//     } else if (charCode === 64) {
+//         alert("Please enter a valid username without '@'");
+//         isValid = false;
+//         break;
+//     }
+// }
+
+// // Only show success if no invalid characters were found
+// if (isValid) {
+//     alert("Username created successfully!");
+// }
