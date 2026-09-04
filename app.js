@@ -1425,9 +1425,37 @@
 // should inform about its availability.
 
 
-let A= ["cake","apple-pie","cookie","chips","patties"];
-let getInput=document.getElementById("usr_inp");
-for (let i = 0; i < A.length; i++) {
-    const element = array[i];
-    
-}
+
+
+// let A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// let getInput = document.getElementById("usr_inp");
+// let getinpbtn = document.getElementById("inpbtn");
+
+// getinpbtn.addEventListener('click', () => {
+//     let inpvalue = getInput.value.trim();
+//     let found = false;
+
+//     for (let i = 0; i < A.length; i++) {
+//         if (A[i].toLowerCase() === inpvalue.toLowerCase()) {
+//             alert(`${inpvalue} is available at our store at index [${i}]`);
+//             found = true;
+//             break;
+//         }
+//     }
+
+//     if (!found) {
+//         alert(`${inpvalue} is currently not available at our store. We will add it soon.\nStay Tuned!`);
+//     }
+
+//     getInput.value = "";
+// });;
+
+// 15. Write a program to take password as an input from
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
