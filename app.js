@@ -1459,3 +1459,76 @@
 // prompt the user to enter a valid password.
 // For character codes of a-z, A-Z & 0-9, refer to ASCII
 // table at the end of this document.
+
+// 1. Define the missing helper functions at the top
+// function isAlphanumeric(str) {
+//   return /^[a-zA-Z0-9]+$/.test(str);
+// }
+
+// function isNumeric(str) {
+//   return /^\d+$/.test(str);
+// }
+
+// let getInput = document.getElementById("usr_inp");
+// let getinpbtn = document.getElementById("inpbtn");
+
+// getinpbtn.addEventListener('click', () => {
+//     let inpvalue = getInput.value.trim();
+//     let passLength = inpvalue.length;
+    
+//     if (passLength === 0) {
+//         console.log("Password cannot be empty.");
+//         return;
+//     }
+
+//     let checkAlphNnumeric = isAlphanumeric(inpvalue);
+   
+//     let confirmchecknum = isNumeric( inpvalue[0]);
+
+//     if (!checkAlphNnumeric) {
+//         console.log("The code should contain only numbers and alphabets.");
+//         return;
+//     }
+    
+//     if (confirmchecknum) {
+//         console.log("Do not use a number at the start of a password.");
+//         return;
+//     }
+    
+//     if (passLength < 6) {
+//         console.log("Password must be at least 6 characters long.");
+//         return; 
+//     }
+    
+//     console.log("Password creation successful!");
+// });
+
+// 16. Write a program to convert the following string to an
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+//  var university = 'University of Karachi';
+//  var splitedUni=university.split('')
+
+// splitedUni.forEach(element => {
+//     console.log(element)
+// });
+
+
+// 17. Write a program to display the last character of a user
+// input.
+
+// let userInp=prompt("Enter Something ");
+// let Lastchr=userInp[userInp.length-1];
+// console.log(Lastchr)
+
+
+
+// 18. You have a string “The quick brown fox jumps over the
+// lazy dog”. Write a program to count number of
+// occurrences of word “the” in given string.
+
+var string= 'The quick brown force jumps over the lazy dog'
+var count=string.toLowerCase().split("the").length-1
+console.log(`Number of occurrences: ${count}`)
