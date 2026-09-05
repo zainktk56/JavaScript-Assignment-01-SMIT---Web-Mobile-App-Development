@@ -1475,31 +1475,31 @@
 // getinpbtn.addEventListener('click', () => {
 //     let inpvalue = getInput.value.trim();
 //     let passLength = inpvalue.length;
-    
+
 //     if (passLength === 0) {
 //         console.log("Password cannot be empty.");
 //         return;
 //     }
 
 //     let checkAlphNnumeric = isAlphanumeric(inpvalue);
-   
+
 //     let confirmchecknum = isNumeric( inpvalue[0]);
 
 //     if (!checkAlphNnumeric) {
 //         console.log("The code should contain only numbers and alphabets.");
 //         return;
 //     }
-    
+
 //     if (confirmchecknum) {
 //         console.log("Do not use a number at the start of a password.");
 //         return;
 //     }
-    
+
 //     if (passLength < 6) {
 //         console.log("Password must be at least 6 characters long.");
 //         return; 
 //     }
-    
+
 //     console.log("Password creation successful!");
 // });
 
@@ -1529,6 +1529,141 @@
 // lazy dog”. Write a program to count number of
 // occurrences of word “the” in given string.
 
-var string= 'The quick brown force jumps over the lazy dog'
-var count=string.toLowerCase().split("the").length-1
-console.log(`Number of occurrences: ${count}`)
+// var string= 'The quick brown force jumps over the lazy dog'
+// var count=string.toLowerCase().split("the").length-1
+// console.log(`Number of occurrences: ${count}`)
+
+
+
+//                                      CHAPTER 26-30
+
+
+// 1. Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+
+// let num=3.434343;
+// document.write(`number : ${num} <br>`)
+// document.write(`Round off value : ${Math.round(num)}  <br>`)
+// document.write(`Floor : ${Math.floor(num)}  <br>`)
+// document.write(`Ceil Value : ${Math.ceil(num)}`)
+
+// 2. Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// let num=-24.944985948;
+
+// document.write(`number : ${num} <br>`)
+// document.write(`Round off value : ${Math.round(num)}  <br>`)
+// document.write(`Floor : ${Math.floor(num)}  <br>`)
+// document.write(`Ceil Value : ${Math.ceil(num)}`)
+
+
+// 3. Write a program that displays the absolute value of a
+// number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+// let absNum=-78.7;
+// document.write(`Absolute : ${Math.abs(absNum)} <br>`)
+
+// 4. Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+// let x;
+// let y;
+// let z;
+// let getx=document.getElementById("x")
+// let gety=document.getElementById("y")
+// let getz=document.getElementById("z")
+// document.getElementById("roll").addEventListener('click', () => {
+//     x = Math.floor(((Math.random() * 6) + 1));
+//     getx.innerHTML=` Dice one :${x}`
+
+
+//     y = Math.floor(((Math.random() * 6) + 1));
+//     gety.innerHTML=` Dice two :${y}`
+
+
+//     z = Math.floor(((Math.random() * 6) + 1));
+//     getz.innerHTML=`  Dice three :${z}`
+
+// })
+
+// 5. Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser.
+
+// let getdiv=document.getElementById("output")
+// document.getElementById("roll").addEventListener('click',()=>{
+// let coin = Math.floor(Math.random() * 10 + 1);
+
+// if (coin > 5) {
+//     getdiv.innerHTML=`its head`
+// }
+// else if(coin < 5) {
+//     getdiv.innerHTML=`its tails`
+// }
+// else {
+//     getdiv.innerHTML=`its a draw`
+// }
+// })
+
+
+// 6. Write a program that shows a random number between 1
+// and 100 in your browser.
+
+// document.getElementById("roll").addEventListener('click',()=>{
+//  let randomNum=Math.floor(Math.random() * 100 + 1);   
+// document.getElementById("output").innerHTML=(`Random number between 1 and 100 : ${randomNum}`)
+// });
+
+// 7. Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+// let weight=prompt("Enter your weight in kgs : ");
+// console.log(`The weight of the user is ${parseFloat(weight)} kilograms.`)
+
+
+// 8. Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+
+
+// var secretNum = Math.floor(Math.random() * 10 + 1); 
+
+// var inpNum;
+
+// while (inpNum !== secretNum) {
+//     inpNum = Number(prompt("Enter the secret Number (1-10):"));
+//     if (inpNum>10){
+//         alert("INVALID INPUT !please enter number between (1-10)")
+//     }
+//     else{
+//         if (inpNum > secretNum) {
+//         alert("Too high!");
+//     } else if (inpNum < secretNum) {
+//         alert("Too low!");
+//     } else if (inpNum === secretNum) {
+//         alert("You guessed the number, congrats!");
+//     } else {
+//         alert("Please enter a valid number.");
+//     }
+//     }
+    
+// }
+
